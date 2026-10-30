@@ -16,7 +16,6 @@
   --heading-font: "Montserrat",  sans-serif;
   --nav-font: "Raleway",  sans-serif;
 }
-<div class="preview-header text-center mb-4">
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
@@ -4239,8 +4238,7 @@ section,
   background: linear-gradient(120deg, var(--heading-color), color-mix(in srgb, var(--heading-color), var(--accent-color) 30%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  background-clip: text
 }
 
 .contact .form-container p {
@@ -4427,10 +4425,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
 /*--------------------------------------------------------------
 # Error 404 Section
 --------------------------------------------------------------*/
@@ -5003,4 +4997,5 @@ section,
 
 .page-title nav.breadcrumbs {
   padding: 10px 0 !important;
+}
 }

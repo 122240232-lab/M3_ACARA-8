@@ -86,7 +86,7 @@
 
             <div class="swiper-slide">
               <div class="blog-hero-item">
-                <img src="assets/img/blog/foto 5.jpeg" alt="Blog Hero Image" class="img-fluid">
+                <img src="assets/img/camino.png" alt="Blog Hero Image" class="img-fluid">
                 <div class="blog-hero-content">
                   <span class="category">OEM Toys & Electronic Manufacturer</span>
                   <h1>CAMINO INDUSTRIAL INDONESIA</h1>
@@ -610,16 +610,19 @@
       </nav>
     </div><!-- End Page Title -->
         <!-- Contact Section -->
+<!-- Contact Section -->
     <section id="contact" class="contact section">
-
       <div class="container">
-        <div class="contact-wrapper">
-          <div class="contact-info-panel">
+        
+        <!-- PEMBUNGKUS UTAMA (Flexbox) -->
+        <div class="contact-wrapper" style="display: flex !important; flex-wrap: wrap !important; gap: 30px !important; align-items: flex-start !important;">
+          
+          <!-- KOTAK BIRU INFORMASI KONTAK (DI SEBELAH KIRI - 40%) -->
+          <div class="contact-info-panel" style="flex: 0 0 40% !important; max-width: 40% !important;">
             <div class="contact-info-header">
               <h3>Contact Information</h3>
               <p>Kami siap membantu Anda mendapatkan informasi yang dibutuhkan. Jangan ragu untuk menghubungi kami melalui kontak yang tersedia.</p>
             </div>
-
             <div class="contact-info-cards">
               <div class="info-card">
                 <div class="icon-container">
@@ -630,29 +633,26 @@
                   <p>Dusun Jatidrenges, Desa/Kelurahan Kedungjati, Kec. Kabuh, Kab. Jombang, East Java, Indonesia. Postal Code: 61455</p>
                 </div>
               </div>
-
               <div class="info-card">
                 <div class="icon-container">
                   <i class="bi bi-envelope-open"></i>
                 </div>
                 <div class="card-content">
                   <h4>Email Us</h4>
-                  <p>recruit@ptcamino.com</p>
-                  <p>marketing@ptcamino.com</p>
+                  <p><a href="mailto:recruit@ptcamino.com" style="color: inherit; text-decoration: underline;">recruit@ptcamino.com</a></p>
+                  <p><a href="mailto:marketing@ptcamino.com" style="color: inherit; text-decoration: underline;">marketing@ptcamino.com</a></p>
                 </div>
               </div>
-
               <div class="info-card">
                 <div class="icon-container">
                   <i class="bi bi-telephone-fill"></i>
                 </div>
                 <div class="card-content">
                   <h4>Call Us</h4>
-                  <p>Customer Service: +62 812-5935-3838</p>
-                  <p>Recruitment: +62 822-2960-6731</p>
+                  <p>Customer Service: <a href="tel:+6281259353838" style="color: inherit; text-decoration: underline;">+62 812-5935-3838</a></p>
+                  <p>Recruitment: <a href="tel:+6282229606731" style="color: inherit; text-decoration: underline;">+62 822-2960-6731</a></p>
                 </div>
               </div>
-
               <div class="info-card">
                 <div class="icon-container">
                   <i class="bi bi-clock-history"></i>
@@ -663,57 +663,71 @@
                 </div>
               </div>
             </div>
-          </div>
-            <div class="social-links-panel">
+            <div class="social-links-panel" style="margin-top: 20px; text-align: center;">
+              <h4 style="color: #fff; font-size: 16px; margin-bottom: 12px;">Follow Us</h4>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.instagram.com/ptcaminoindonesia?obrf=d3NoZnU5NDBkaWR2" target="_blank" class="text-white fs-4" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/pt-camino-industrial-indonesia/" target="_blank" class="text-white fs-5" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@ptcaminoindonesia" target="_blank" class="text-white fs-4" aria-label="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+              </div>
             </div>
           </div>
-<div class="contact-form-panel">
-    <div class="map-container">
-        <iframe
-            src="https://maps.google.com/maps?q=Dusun%20Jatidrenges%2C%20Kedungjati%2C%20Kabuh%2C%20Jombang%2C%20Jawa%20Timur%2061455&output=embed"
-            width="100%"
-            height="100%"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-<div class="form-container">
-  <h3>Send Us a Message</h3>
-<form id="contact-form" action="https://formsubmit.co/ajax/recruit@ptcamino.com" method="POST">
 
-  <input type="hidden" name="_cc" value="marketing@ptcamino.com">
-  <input type="hidden" name="_subject" value="Pesan Baru dari Website PT Camino Industrial Indonesia">
-  <input type="hidden" name="_template" value="table">
+          <!-- PETA & FORM PESAN (DI SEBELAH KANAN - 55%) -->
+          <div class="contact-form-panel" style="flex: 0 0 55% !important; max-width: 55% !important;">
+            <div class="map-container mb-4" style="height: 300px; width: 100%;">
+                <iframe
+                    src="https://maps.google.com/maps?q=Dusun%20Jatidrenges%2C%20Kedungjati%2C%20Kabuh%2C%20Jombang%2C%20Jawa%20Timur%2061455&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0; border-radius: 10px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="form-container">
+              <h3>Send Us a Message</h3>
+              <form id="contact-form" action="https://formsubmit.co/ajax/recruit@ptcamino.com" method="POST">
+                <input type="hidden" name="_cc" value="marketing@ptcamino.com">
+                <input type="hidden" name="_subject" value="Pesan Baru dari Website PT Camino Industrial Indonesia">
+                <input type="hidden" name="_template" value="table">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+                  <label>Full Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                  <label>Email Address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  <label>Subject</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Your Message" style="height:150px" required></textarea>
+                  <label>Your Message</label>
+                </div>
+                <div id="status-pesan" class="my-3" role="status"></div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-submit">
+                    Send Message <i class="bi bi-send-fill ms-2"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
 
-  <div class="form-floating mb-3">
-    <input type="text" class="form-control" name="name" placeholder="Full Name" required>
-    <label>Full Name</label>
-  </div>
+        </div>
 
-  <div class="form-floating mb-3">
-    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-    <label>Email Address</label>
-  </div>
-
-  <div class="form-floating mb-3">
-    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-    <label>Subject</label>
-  </div>
-
-  <div class="form-floating mb-3">
-    <textarea class="form-control" name="message" rows="5" placeholder="Your Message" style="height:150px" required></textarea>
-    <label>Your Message</label>
-  </div>
-
-  <div id="status-pesan" class="my-3" role="status"></div>
-
-  <div class="d-grid">
-    <button type="submit" class="btn-submit">
-      Send Message <i class="bi bi-send-fill ms-2"></i>
-    </button>
-  </div>
+      </div>
+    </section>
 
 </form>
 <script>
